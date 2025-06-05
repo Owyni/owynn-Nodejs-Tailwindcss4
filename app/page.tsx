@@ -6,7 +6,6 @@ import {
   DialogPanel,
   Disclosure,
   DisclosureButton,
-  DisclosurePanel,
   Popover,
   PopoverButton,
   PopoverGroup,
@@ -21,7 +20,7 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon} from '@heroicons/react/20/solid'
 
 
 const products = [
@@ -36,14 +35,15 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white">
+    <header className="bg-sky-950">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+              src="https://avatars.githubusercontent.com/u/98787870?s=96&v=4"
+              style={{ borderRadius: '50%', width: '55px', height: '55px' }}
               className="h-8 w-auto"
             />
           </a>
@@ -103,9 +103,6 @@ export default function Example() {
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
         </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -158,12 +155,6 @@ export default function Example() {
                 </a>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
               </div>
             </div>
           </div>
