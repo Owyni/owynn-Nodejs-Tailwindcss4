@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-teal-900/80 via-teal-800/80 to-teal-950/80 shadow-inner m-0 mt-auto backdrop-blur-md">
+    <footer>
       <div className="w-full max-w-screen-xl mx-auto p-6 md:py-10">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a

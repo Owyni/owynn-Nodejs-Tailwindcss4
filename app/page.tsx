@@ -68,15 +68,6 @@ export default function Example() {
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://avatars.githubusercontent.com/u/98787870?s=96&v=4"
-                style={{ borderRadius: "50%", width: "55px", height: "55px" }}
-                className="h-8 w-auto"
-              />
-            </a>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -91,13 +82,12 @@ export default function Example() {
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-1 text-base font-semibold text-cyan-100 hover:text-cyan-300 transition">
-                Product
+                Owynn
                 <ChevronDownIcon
                   aria-hidden="true"
                   className="size-5 flex-none text-cyan-400"
                 />
               </PopoverButton>
-
               <PopoverPanel
                 transition
                 className="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-slate-900 shadow-lg ring-1 ring-cyan-900/30 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
@@ -130,14 +120,23 @@ export default function Example() {
               </PopoverPanel>
             </Popover>
 
-            <a href="#" className="text-base font-semibold text-cyan-100 hover:text-cyan-300 transition">
-              Features
+            <a
+              href="#"
+              className="text-base font-semibold text-cyan-100 hover:text-cyan-300 transition"
+            >
+              About me
             </a>
-            <a href="#" className="text-base font-semibold text-cyan-100 hover:text-cyan-300 transition">
-              Marketplace
+            <a
+              href="#"
+              className="text-base font-semibold text-cyan-100 hover:text-cyan-300 transition"
+            >
+              Projects
             </a>
-            <a href="#" className="text-base font-semibold text-cyan-100 hover:text-cyan-300 transition">
-              Company
+            <a
+              href="#"
+              className="text-base font-semibold text-cyan-100 hover:text-cyan-300 transition"
+            >
+              Skills
             </a>
           </PopoverGroup>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
