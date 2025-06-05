@@ -1,3 +1,4 @@
+import '@fontsource-variable/inter';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,7 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
+      <head><link rel="stylesheet" href="https://rsms.me/inter/inter.css" /></head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
