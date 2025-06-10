@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import footer from "./components/footer";
 import Footer from './components/footer';
+import Glassnavbar from './components/glass-navbar';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,10 +28,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <head><link rel="stylesheet" href="https://rsms.me/inter/inter.css" /></head>
+      <head>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="bg-[#f2f5d5] min-h-screen flex flex-col">
+          <Glassnavbar />
+          <main className="flex-1">
+            
+          </main>
+        </div>
         {children}
       </body>
     </html>
