@@ -9,20 +9,20 @@ export default function Footer() {
           >
             <img
               src="https://avatars.githubusercontent.com/u/98787870?s=96&v=4"
-              className="h-10 rounded-full border-2 border-teal-400 shadow-lg"
+              className="h-10 rounded-full border-2 border-zinc-700"
               alt="Logo"
             />
-            <span className="self-center text-2xl font-extrabold whitespace-nowrap bg-gradient-to-r from-cyan-400 via-teal-300 to-lime-300 bg-clip-text text-transparent drop-shadow-lg tracking-wide">
+            <span className="self-center text-2xl font-extrabold whitespace-nowrap bg-gradient-to-r from-green-500 via-orange-400 to-red-600 bg-clip-text text-transparent drop-shadow-lg tracking-wide">
               Owynn
             </span>
           </a>
         </div>
-        <hr className="my-6 border-teal-700 sm:mx-auto lg:my-8 opacity-40" />
-        <span className="block text-sm text-teal-200 sm:text-center">
+        <hr className="my-6 border-black sm:mx-auto lg:my-8 opacity-40" />
+        <span className="block text-sm text-neutral-800 sm:text-center">
           © 2025{" "}
           <a
-            href="https://github.com/Owyni/"
-            className="hover:underline text-cyan-300 font-semibold"
+            href="https://www.linkedin.com/in/owyni/"
+            className="hover:underline text-teal-700 font-semibold"
           >
             Owynn
           </a>
