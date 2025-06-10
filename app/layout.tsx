@@ -27,9 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="bg-[#f2f5d5] min-h-screen flex flex-col">
           <Glassnavbar />

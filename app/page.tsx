@@ -1,9 +1,7 @@
-import React from 'react'
-
-function page() {
+export default function Page() {
   return (
-    <div>page</div>
-  )
+    <div>
+        <img src="/webpage-background-idea.png" alt="webpage background idea" />
+    </div>
+  );
 }
-
-export default page
