@@ -1,7 +1,9 @@
-export default function Page() {
+import React from 'react'
+
+const page = () => {
   return (
-    <div>
-        <img src="/webpage-background-idea.png" alt="webpage background idea" />
-    </div>
-  );
+    <div>page</div>
+  )
 }
+
+export default page
