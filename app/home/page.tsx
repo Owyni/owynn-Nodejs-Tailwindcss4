@@ -1,4 +1,5 @@
 import Footer from "../components/footer";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -15,7 +16,9 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <img
+            <Image
+              width={700}
+              height={700}
               src="/webpage-background-idea.png"
               alt="webpage-background-idea"
               className="min-w-[300px] h-auto"
@@ -30,7 +33,7 @@ export default function Page() {
             <p className="text-gray-700 text-lg">
               I'm a Systems Engineering student from Mexico who enjoys meeting new people,
                discussing contemporary issues, and embracing new experiences. I'm fluent in both English and Spanish.
-               I’m passionate about fitness and spend a lot of time at the gym, but I’m just as comfortable focusing on long-term 
+               I'm passionate about fitness and spend a lot of time at the gym, but I'm just as comfortable focusing on long-term 
                challenges that require persistence and patience. I'm always ready to face new obstacles—and excited to connect with you!.
             </p>
           </section>
