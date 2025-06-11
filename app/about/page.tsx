@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const skills = [
   {
@@ -37,18 +38,26 @@ const skills = [
 
 const about = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4">
-      <div className="bg-white/70 backdrop-blur-md rounded-2xl shadow-xl p-8 max-w-2xl w-full mt-16 mb-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden">
+      <Image
+        width={600}
+        height={400}
+        src="/calavera.png"
+        alt="Skills-background"
+        className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none select-none z-0"
+        priority
+      />
+      <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 sm:p-8 max-w-2xl w-full mt-10 mb-10 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="flex flex-col items-center justify-center bg-[#f2f5d5] rounded-xl shadow p-4 font-semibold text-[#3a3a3a] text-lg text-center hover:bg-gray-700 hover:text-white transition-colors duration-300 cursor-pointer"
+              className="flex flex-col items-center justify-center bg-[#f2f5d5] rounded-xl shadow p-3 font-semibold text-[#3a3a3a] text-base text-center hover:bg-[#e9b384]/80 hover:text-[#7c6a0a] transition-colors duration-200 cursor-pointer"
             >
               <img
                 src={skill.logo}
                 alt={skill.name + ' logo'}
-                className="w-12 h-12 mb-2 object-contain"
+                className="w-10 h-10 mb-2 object-contain"
                 loading="lazy"
               />
               {skill.name}
