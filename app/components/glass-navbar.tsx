@@ -11,7 +11,7 @@ export default function Glassnavbar() {
         <Link href="/projects" className="text-green-500 hover:text-gray-700 font-medium transition-colors">Projects</Link>
       </li>
       <li>
-        <Link href="/about" className="text-orange-400 hover:text-gray-700 font-medium transition-colors">About</Link>
+        <Link href="/about" className="text-orange-400 hover:text-gray-700 font-medium transition-colors">Skills</Link>
       </li>
       <li>
         <Link href="/contact" className="text-red-600 hover:text-gray-700 font-medium transition-colors">Contact</Link>
