@@ -2,7 +2,7 @@ import React from 'react'
 
 const contact = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f2f5d5]">
+    <div className="flex items-center justify-center bg-[#f2f5d5]">
       <div className="bg-white/80 rounded-2xl shadow-lg p-8 max-w-md w-full text-center">
         <h1 className="text-4xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-green-500 to-red-600 drop-shadow-lg animate-pulse tracking-wide">
           CLICK ME

@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden">
       <main>
-        <div className="flex items-center">
+        <div className="flex items-center max-w-7xl w-full mx-auto justify-between backdrop-blur-md px-8 py-4 flex-col md:flex-row">
           <div className="">
             <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-4 drop-shadow-lg p-2">
               Hey, I'm Owynn!
@@ -30,11 +30,11 @@ export default function Page() {
             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-4">
               A little about me
             </h2>
-            <p className="text-gray-700 text-lg">
+            <p className="text-gray-700 text-lg leading-relaxed">
                I'm a Systems Engineering student from Mexico who enjoys meeting new people,
                discussing contemporary issues, and embracing new experiences. I'm fluent in both English and Spanish.
                I'm passionate about fitness and spend a lot of time at the gym, but I'm just as comfortable focusing on long-term 
-               challenges that require persistence and patience. I'm always ready to face new obstacles—and excited to connect with you!.
+               challenges that require persistence and patience. I'm always ready to face new obstacles and excited to connect with you!
             </p>
           </section>
         </div>
