@@ -1,26 +1,29 @@
-import React from 'react'
-import Footer from '../components/footer'
+import React from "react";
+import Footer from "../components/footer";
 
 const projects = [
   {
-    title: 'Minecraft Sheeps Simulator',
+    title: "Minecraft Sheeps Simulator",
     description:
-      'A python program that simulates the sheeps reproduction in Minecraft, with the EDO explaining how it works.',
-    link: 'https://github.com/Owyni/Proyecto-Ecuaciones-Diferenciales',
+      "A python program that simulates the sheeps reproduction in Minecraft, with the EDO explaining how it works.",
+    link: "https://github.com/Owyni/Proyecto-Ecuaciones-Diferenciales",
+    image: "/ovejas.jpg",
   },
   {
-    title: 'My School App',
+    title: "My School App",
     description:
-      'A simple app that helps teachers in my school to take attendance. Its a Java / MySql project in process.',
-    link: 'https://github.com/Owyni/UVAQ-app',
+      "A simple app that helps teachers in my school to take attendance. Its a Java / MySql project in process.",
+    link: "https://github.com/Owyni/UVAQ-app",
+    image: "/uvaq_app.jpg",
   },
   {
-    title: 'Simple Web Portfolio',
+    title: "Simple Web Portfolio",
     description:
-      'I use this portfolio to show my HTML / JavaScript / CSS skills, is clean and simple code.',
-    link: 'https://github.com/Owyni/Owyni.github.io',
+      "I use this portfolio to show my HTML / JavaScript / CSS skills, is clean and simple code.",
+    link: "https://github.com/Owyni/Owyni.github.io",
+    image: "/old_portfolio.jpg",
   },
-]
+];
 
 const Projects = () => {
   return (
@@ -35,10 +38,17 @@ const Projects = () => {
               key={project.title}
               className="bg-[#403d53] text-[#ceec1f] border border-cyan-900/40 rounded-2xl shadow-xl p-8 flex flex-col justify-between hover:scale-[1.03] hover:shadow-cyan-700/30 transition-all duration-300 backdrop-blur-md"
             >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-40 object-cover rounded-lg mb-4 border border-cyan-900/20 bg-[#f2f5d5]"
+              />
               <h2 className="text-2xl font-bold text-pale mb-3 drop-shadow">
                 {project.title}
               </h2>
-              <p className="text-[#f3f3d4] font-sans p-2">{project.description}</p>
+              <p className="text-[#f3f3d4] font-sans p-2">
+                {project.description}
+              </p>
               <a
                 href={project.link}
                 target="_blank"
@@ -53,7 +63,7 @@ const Projects = () => {
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

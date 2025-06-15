@@ -52,7 +52,7 @@ const about = () => {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="flex flex-col items-center justify-center bg-[#f2f5d5] rounded-xl shadow p-3 font-semibold text-[#3a3a3a] text-base text-center hover:bg-[#e9b384]/80 hover:text-[#7c6a0a] transition-colors duration-200 cursor-pointer w-full"
+              className="flex flex-col items-center justify-center bg-[#f2f5d5] rounded-xl shadow p-3 font-semibold text-[#3a3a3a] text-base text-center hover:bg-teal-950 hover:text-[#7c6a0a] transition-colors duration-200 cursor-pointer w-full"
             >
               <img
                 src={skill.logo}
